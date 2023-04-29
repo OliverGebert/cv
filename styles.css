@@ -1,3 +1,17 @@
 html {
-    background-color: aquamarine;
+    background-color: lightgray;
+}
+#blue-header {
+    color:blueviolet
+}
+a[href]{
+    color:green
+}
+strong{
+    color: blue;
+    font-size: larger;
+}
+img{
+    height: 175px;
+    width: 175px;
 }

@@ -1,11 +1,6 @@
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">  
 html {
     background-color: #F6F1F1;
-    font-family:"Roboto Slab";
-    
 }
 h1{
     color:#146C94;
@@ -22,11 +17,10 @@ strong{
 img{
     height: 175px;
     width: 175px;
+    border: 2px solid black;
 }
 #blue-header {
-    color:#146C94;
     background-color: #AFD3E2;
-    font-size: 16pt;
 }
 a[href]{
     color:#19A7CE;

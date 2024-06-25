@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <style>
             th{
                 font-family: "Roboto Slab";
@@ -14,130 +15,236 @@
         </style>
     </head>
     <body>
-        <table cellspacing="20">
-            <tr>
-                <div>
-                    <td><img src="images/oli.jpeg" alt="Picture Oliver" width="200" height="220"></td>
-                    <td>
-                        <h1 id="blue-header">Resume: Oliver Gebert</h1>
-                        <h2><a href="https://www.linkedin.com/in/oliver-gebert-pmp-48b2a17/">Director Platform Excellence</a></h2>
-                        <p><em>Director of Platform Excellence within <strong> Enabling Functions </strong></em></p>
-                        <a href="contactinfo.html">Contact Information</a>
-                        <br><a href="motivation.html">Motivation</a>
-                    </td>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Olan Consulting</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CV</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search Page</button>
+                </form>
                 </div>
-            </tr>
-        </table> 
-        <br>
-        <hr>
-        <br>
-        <strong>Eduction and Work Experience</strong>
-        <table cellspacing="20">
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Place</th>
-                    <th>Occupation</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1973-2002</td>
-                    <td>Berlin</td>
-                    <td>
-                        <ul>
-                            <li>Compuer Science at <a href="https://www.tu.berlin"> TU Berlin</a></li>
-                            <li><a href="https://siemens.de">Siemens AG</a> as Software Engineer</li>
-                            <li>Icon Medialab as Project Manager</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2002-2012</td>
-                    <td>Köln</td>
-                    <td>
-                        <ul>
-                            <li><a href="https://bayer.com">Bayer AG</a> as Team Lead</li>
-                            <li>Certified PMP from PMI</li>
-                        </ul>
-                    </td>
-                </tr>
+            </div>
+            </nav>
+        <!-- Feature list -->
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom"></h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-square" viewBox="0 0 16 16">
+                    <path d="M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">IT Strategy Management</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="icon-link">
+                Call to action
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-square" viewBox="0 0 16 16">
+                    <path d="M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Project Management</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="icon-link">
+                Call to action
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-square" viewBox="0 0 16 16">
+                    <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Change Leadership</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="icon-link">
+                Call to action
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- Service Offering Description -->
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./images/oli.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Experienced IT Manager, vertified Project Manager and Software Architect</h1>
+                <p class="lead">Experienced Manager from strategy to project implementation, frm portfolio management to IT Architecture</p>
+                <div>
+                    <a href="https://www.linkedin.com/in/oliver-gebert-pmp-48b2a17/">Director Platform Excellence</a>
+                    <br><a href="contactinfo.html">Contact Information</a>
+                    <br><a href="motivation.html">Motivation</a>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Education and Experience list -->
+        <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <img src="./images/backpack4-fill.svg" alt="twbs" width="16" height="16" class="flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                    <h6 class="mb-0">Education and work experience</h6>
+                    <p class="mb-0 opacity-75">
+                        <table cellspacing="20">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Place</th>
+                                    <th>Occupation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1973-2002</td>
+                                    <td>Berlin</td>
+                                    <td>
+                                        <ul>
+                                            <li>Compuer Science at <a href="https://www.tu.berlin"> TU Berlin</a></li>
+                                            <li><a href="https://siemens.de">Siemens AG</a> as Software Engineer</li>
+                                            <li>Icon Medialab as Project Manager</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2002-2012</td>
+                                    <td>Köln</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="https://bayer.com">Bayer AG</a> as Team Lead</li>
+                                            <li>Certified PMP from PMI</li>
+                                        </ul>
+                                    </td>
+                                </tr>
 
-                <tr>
-                    <td>2012-2023</td>
-                    <td>Bergisch Gladbach</td>
-                    <td>
-                        <ul>
-                            <li><a href="https://bayer.com">Bayer AG</a> as Team Lead</li>
-                            <li>Certified Software Architect from iSAQB</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <hr>
-        <strong>Skills</strong>
-        <table cellspacing="20">
-            <tr>
-                <td>
-                    <table>
-                    <tr>
-                        <td>Java</td>
-                        <td>⭐⭐⚪⚪⚪</td>
-                    </tr>
-                    <tr>
-                        <td>HTML-CSS</td>
-                        <td>⭐⭐⚪⚪⚪</td>
-                    </tr>
-                    <tr>
-                        <td>ShellScripting</td>
-                        <td>⭐⭐⭐⚪⚪</td>
-                    </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                    <tr>
-                        <td>Python</td>
-                        <td>💚💚💚⚪⚪</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>💚⚪⚪⚪⚪</td>
-                    </tr>
-                    <tr>
-                        <td>Perl</td>
-                        <td>💚⚪⚪⚪⚪</td>
-                    </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                    <tr>
-                        <td>Leadership</td>
-                        <td>✨✨✨✨⚪</td>
-                    </tr>
-                    <tr>
-                        <td>Change Management</td>
-                        <td>✨✨✨⚪⚪</td>
-                    </tr>
-                    <tr>
-                        <td>Project Management</td>
-                        <td>✨✨✨⚪⚪</td>
-                    </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <hr>
-        <a href="hobbies.html"><strong>My Hobbies</strong></a>
-        <ol type="i">
-            <li>Reading</li>
-            <li>Cross-Fit</li>
-            <li>Dancing</li>
-            <li>Software-Development</li>
-            <li>Meditation</li>
-        </ol>
-        <footer> <small>Copyright © 2023 Oliver Gebert. All Rights Reserved.</small></footer>
+                                <tr>
+                                    <td>2012-2023</td>
+                                    <td>Bergisch Gladbach</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="https://bayer.com">Bayer AG</a> as Team Lead</li>
+                                            <li>Certified Software Architect from iSAQB</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    </div>
+                </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <img src="./images/briefcase-fill.svg" alt="twbs" width="16" height="16" class="flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                    <h6 class="mb-0">Skills</h6>
+                    <p class="mb-0 opacity-75">
+                        <table cellspacing="20">
+                            <tr>
+                                <td>
+                                    <table>
+                                    <tr>
+                                        <td>Java</td>
+                                        <td>⭐⭐⚪⚪⚪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HTML-CSS</td>
+                                        <td>⭐⭐⚪⚪⚪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ShellScripting</td>
+                                        <td>⭐⭐⭐⚪⚪</td>
+                                    </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table>
+                                    <tr>
+                                        <td>Python</td>
+                                        <td>💚💚💚⚪⚪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JavaScript</td>
+                                        <td>💚⚪⚪⚪⚪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Perl</td>
+                                        <td>💚⚪⚪⚪⚪</td>
+                                    </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table>
+                                    <tr>
+                                        <td>Leadership</td>
+                                        <td>✨✨✨✨⚪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Change Management</td>
+                                        <td>✨✨✨⚪⚪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Project Management</td>
+                                        <td>✨✨✨⚪⚪</td>
+                                    </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <!-- Footer container -->
+        <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary"><small>Copyright © 2024 Oliver Gebert. All Rights Reserved.</small></p>
+
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+        </footer>
+        </div>
     </body>
 </html>

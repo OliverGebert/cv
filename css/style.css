@@ -1,5 +1,12 @@
+:root {
+  --col1 : #EBF4F6;
+  --col2 : #37B7C3;
+  --col3 : #088395;
+  --col4 : #071952;
+}
+
 .gradient-background {
-  background: linear-gradient(300deg, #00ace0e8, #fdfeff);
+  background: linear-gradient(300deg, var(--col3), var(--col1));
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
@@ -27,3 +34,46 @@
   border-radius: 50%;
 }
 
+.background-main {
+  background-color: var(--col1);
+}
+
+.background-2nd {
+  background-color: var(--col2);
+}
+
+.background-3rd {
+  background-color: var(--col3);
+}
+
+.background-4th {
+  background-color: var(--col4);
+}
+
+.icon {
+  color: var(--col3);
+}
+
+a:link {
+  color: var(--col3);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--col3);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--col4);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--col4);
+  background-color: transparent;
+  text-decoration: underline;
+}

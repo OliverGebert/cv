@@ -17,10 +17,19 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
                             <li class="nav-item active">
-                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" aria-current="page" href="#Service">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Service</a>
+                                <a class="nav-link" href="#feature list">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#challenges list">Challenges</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Footer">Footer / Impressum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
                             </li>
                             <li class="nav-item">
                                 <a onclick="nextCompany()" class="nav-link" href="#">Toggle Name</a>
@@ -30,8 +39,8 @@
                             </li>
                         </ul>
                         <form id="companyInput" class="d-flex" role="search">
-                            <input class="form-control me-2" type="text" name="company" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" onclick="changeCompany()" type="submit">Change Name</button>
+                            <input onc class="form-control me-2" type="text" name="company" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" onclick="addCompany()" type="submit">Add Name</button>
                         </form>
                     </div>
                 </div>
@@ -304,7 +313,8 @@
             </div>
         </section>
         <script>
-            var companyNames = ["OPIC", "Evolutionary Consulting", "MOXAN Consulting"]
+            var company = ""
+            var companyNames = ["OPIC Consulting", "Evolutionary Consulting", "MOXAN Consulting"]
             var maxCompanies = companyNames.length
             var currentCompany = 0
             var cssFiles = ["./css/styleA.css", "./css/styleB.css", "./css/styleC.css"]
@@ -325,10 +335,12 @@
                 currentCompany = (currentCompany +1) % (maxCompanies) 
                 setCompany(companyNames[currentCompany])
             }
-            function changeCompany() {
-                const company = document.getElementById("companyInput").elements["company"].value;
+            function addCompany() {
+                company = document.getElementById("companyInput").elements["company"].value;
 //                document.querySelector("#Service h1").classList.toggle("focus-font")
-                setCompany(company)
+//                setCompany(company)
+                companyNames.push(company)
+                maxCompanies = companyNames.length
             }
             function setCompany(companyName){
                 document.querySelector("#Service h1").innerHTML = companyName;

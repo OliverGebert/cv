@@ -3,6 +3,11 @@
   --col2 : #37B7C3;
   --col3 : #088395;
   --col4 : #071952;
+  --col5 : #F20202; 
+}
+
+.focus-font {
+  background-color: var(--col5)
 }
 
 .gradient-background {

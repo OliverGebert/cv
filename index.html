@@ -23,21 +23,15 @@
                                 <a class="nav-link" href="#">Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CV</a>
+                                <a onclick="nextCompany()" class="nav-link" href="#">Toggle Name</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                   Color Schema 
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a onclick="CSS_A()" class="dropdown-item" href="#">Schema A</a>
-                                    <a onclick="CSS_B()" class="dropdown-item" href="#">Schema B</a>
-                                </div>
+                                <a onclick="nextCSS()" class="nav-link" href="#">Toggle CSS</a>
                             </li>
                         </ul>
                         <form id="companyInput" class="d-flex" role="search">
                             <input class="form-control me-2" type="text" name="company" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" onclick="changeName()" type="submit">Change Name</button>
+                            <button class="btn btn-outline-success" onclick="changeCompany()" type="submit">Change Name</button>
                         </form>
                     </div>
                 </div>
@@ -310,15 +304,34 @@
             </div>
         </section>
         <script>
+            var companyNames = ["OPIC", "Evolutionary Consulting", "MOXAN Consulting"]
+            var maxCompanies = companyNames.length
+            var currentCompany = 0
+            var cssFiles = ["./css/styleA.css", "./css/styleB.css", "./css/styleC.css"]
+            var maxCSSFiles = cssFiles.length
+            var currentCSS = 0
+
+            function nextCSS(){
+                currentCSS = (currentCSS + 1) % maxCSSFiles
+                document.querySelectorAll("head link")[1].href = cssFiles[currentCSS]
+            }
             function CSS_A() {
                 document.querySelectorAll("head link")[1].href = "./css/styleA.css"
             }
             function CSS_B() {
                 document.querySelectorAll("head link")[1].href = "./css/styleB.css"
             }
-            function changeName() {
+            function nextCompany() {
+                currentCompany = (currentCompany +1) % (maxCompanies) 
+                setCompany(companyNames[currentCompany])
+            }
+            function changeCompany() {
                 const company = document.getElementById("companyInput").elements["company"].value;
-                document.querySelector("#Service h1").innerHTML = company;
+//                document.querySelector("#Service h1").classList.toggle("focus-font")
+                setCompany(company)
+            }
+            function setCompany(companyName){
+                document.querySelector("#Service h1").innerHTML = companyName;
             }
         </script>
     </body>

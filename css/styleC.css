@@ -1,9 +1,9 @@
 
 :root {
-  --col1 : #e0f7fa;
-  --col2 : #4CAF50;
-  --col3 : #424242;
-  --col4 : #054415;
+  --col1 : #d2e3c8;
+  --col2 : #86a789;
+  --col3 : #739072;
+  --col4 : #4f6f52;
   --col5 : #F20202; 
 }
 
@@ -17,6 +17,10 @@
   animation: gradient-animation 18s ease infinite;
 }
 
+.carousel-item {
+  height: 	24rem;
+  background-color:grey ;
+}
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;

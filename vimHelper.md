@@ -40,8 +40,10 @@ enter *Command* mode with : from *Normal* mode
 | :norm Ivar | adds *var* to the beginning of each line, in visual mode |
 | :set relativenumber | change line numbering to relative |
 | :put q | paste register q to cursor position |
+| :so | source current file |
 | :sort | sort all lines in visual mode |
 | :sort! u | sort in reverse order and make unique |
+| :Lazy | open lazy paket manager |
 
 
 ## Normal

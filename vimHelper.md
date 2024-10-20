@@ -21,6 +21,9 @@ graph TD;
 | a | increment number under cursor by one |
 | x | decrement number under cursor by one |
 | v | vertical select for group action like *$A;* for appending ; to each line end |
+| e | exit nvim to tmux |
+| f | find file with telescope |
+| g | search files with grep |
 
 ## Command
 

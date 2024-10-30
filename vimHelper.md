@@ -59,6 +59,7 @@ Enter *Normal* mode with return from *Command* mode
 | --- | --- |
 | gg | jump to first line |
 | G | juump to last line |
+| zz | vertical center the view |
 | H | jump to top line |
 | L | jump to bottom line |
 | h j k l | left, down, up, right |
@@ -74,6 +75,7 @@ Enter *Normal* mode with return from *Command* mode
 | N | prev occurance |
 | f | find first element in current line |
 | % | jump to matching bracket ([{ |
+| = | correct indenting for visual area |
 
 | Enter Insert Mode | comment |
 | --- | --- |
@@ -107,7 +109,7 @@ Enter *Normal* mode with return from *Command* mode
 | J | joins currnet and next line to one line with space |
 | gv | reselect previous visual selection |
 | ga | provide ASCII under cursor |
-| gx | open URL under cursos in browser |
+| gx | open URL under cursor in browser |
 | gf | open text file under cursor |
 | guu | make line lower case |
 | gUU | make line upper case |

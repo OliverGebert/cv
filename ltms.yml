@@ -1,0 +1,14 @@
+session_name: 2-pane-split
+windows:
+  - window_name: cv_large 
+    window_index: 1
+    layout: main-horizontal
+    options:
+      main-pane-height: 85%
+    shell_command_before:
+      - cd ~/home/cv/
+    panes:
+      - shell_command: 
+          - nvim -c "args *.html *.css" -c "edit index.html" -c "Neotree show"
+        focus: true
+      - shell_command: ela

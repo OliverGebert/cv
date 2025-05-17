@@ -1,0 +1,89 @@
+:root {
+  --col2 : #efefef;
+  --col1 : #cccccc;
+  --col5 : #777777;
+  --col4 : #333333;
+  --col3 : #f57c00; 
+}
+
+.focus-font {
+  background-color: var(--col5)
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, var(--col5), var(--col5));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.carousel-item {
+  height: 	24rem;
+  background-color:grey ;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 250px;
+  border-radius: 50%;
+}
+
+.background-main {
+  background-color: var(--col1);
+}
+
+.background-2nd {
+  background-color: var(--col2);
+}
+
+.background-3rd {
+  background-color: var(--col3);
+}
+
+.background-4th {
+  background-color: var(--col4);
+}
+
+.icon {
+  color: var(--col3);
+}
+
+a:link {
+  color: var(--col3);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--col3);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--col4);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--col4);
+  background-color: transparent;
+  text-decoration: underline;
+}
+

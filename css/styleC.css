@@ -1,10 +1,9 @@
-
 :root {
   --col1 : #d2e3c8;
   --col2 : #86a789;
   --col3 : #739072;
   --col4 : #4f6f52;
-  --col5 : #F20202; 
+  --col5 : #d87d4a; 
 }
 
 .focus-font {
@@ -61,29 +60,54 @@
 }
 
 .icon {
-  color: var(--col3);
+  color: var(--col5);
+}
+
+.text-orange {
+  color: var(--col5);
+}
+
+.btn-orange {
+  background-color: var(--col5);
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #d96a00; /* etwas dunkler für Hover */
+  color: white;
+}
+
+.nav-link {
+  color: var(--col5);
+}
+
+.nav-link:hover {
+  color: var(--col5) !important;
+  text-decoration: underline;
 }
 
 a:link {
-  color: var(--col3);
+  color: var(--col5);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: var(--col3);
+  color: var(--col5);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--col4);
+  color: var(--col5);
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: var(--col4);
+  color: var(--col5);
   background-color: transparent;
   text-decoration: underline;
 }
+

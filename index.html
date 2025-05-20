@@ -152,7 +152,7 @@
               A selection of key disciplines in which I support clients through hands-on leadership, technical expertise, and strategic guidance.
                     Each area reflects years of practical experience delivering results in complex environments.</p>
               <h2 class="pb-2"></h2>
-              <div class="row row-cols-1 row-cols-lg-3 g-3">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                 <div class="col">
                   <div class="card shadow-sm">
                     <img src="./images/OverviewModel.png" class="card-img-top" alt="Project Management">
@@ -301,13 +301,12 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script>
-        var company = ""
-          var companyNames = [ "MOXAN Consulting", "OPIC Consulting", "Evolutionary Consulting"]
+        var companyNames = [ "MOXAN", "Evolutionary"]
         var maxCompanies = companyNames.length
         var currentCompany = 0
-        var cssFiles = ["./css/styleA.css", "./css/styleB.css", "./css/styleC.css", "./css/styleD.css", "./css/styleE.css"]
+        var cssFiles = ["./css/styleB.css", "./css/styleC.css", "./css/styleE.css"]
         var maxCSSFiles = cssFiles.length
-        var currentCSS = 4
+        var currentCSS = 2
         var pictureFiles = ["./images/oli-wall.jpg", "./images/oli-ski.jpg", "./images/oli-garden.jpg", "./images/oli-wall2.jpg"]
         var maxPictures = pictureFiles.length
         var currentPicture = 3
@@ -321,16 +320,11 @@
             document.querySelectorAll("body img")[0].src = pictureFiles[currentPicture]
         }
         function nextCompany() {
-            currentCompany = (currentCompany + 1) % (maxCompanies)
+            currentCompany = (currentCompany + 1) % maxCompanies
             setCompany(companyNames[currentCompany])
         }
-        function addCompany() {
-            company = document.getElementById("companyInput").elements["company"].value;
-            companyNames.push(company)
-            maxCompanies = companyNames.length
-        }
         function setCompany(companyName) {
-            document.querySelector("#Service h1").innerHTML = companyName;
+            document.querySelector("#Header h1").innerHTML = companyName;
         }
     </script>
 </body>

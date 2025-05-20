@@ -63,6 +63,10 @@
   color: var(--col5);
 }
 
+.text-orange {
+  color: var(--col5);
+}
+
 .btn-orange {
   background-color: var(--col5);
   color: white;

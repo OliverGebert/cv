@@ -64,7 +64,7 @@
 }
 
 .text-orange {
-  color: var(--col5);
+  color: var(--col5) !important;
 }
 
 .btn-orange {
